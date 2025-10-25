@@ -1,0 +1,31 @@
+/* Header */
+header {
+    display: flex;
+    align-items: center;
+    background-color: var(--primary-color);
+}
+
+header nav {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header a {
+    font-weight: 550;
+    padding: 0.75rem;
+    text-decoration: none;
+}
+
+header a.active {
+    background-color: var(--secondary-color);
+}
+
+header a:hover {
+    background-color: var(--triandary-color);
+}
+
+header object {
+    margin-left: .5rem;
+    max-height: 40px;
+}

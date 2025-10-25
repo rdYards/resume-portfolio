@@ -9,7 +9,7 @@ export function Home() {
 			</a>
 			<h1>Get Started building Vite-powered Preact Apps </h1>
 			<section>
-				<Resource
+				<Resource 
 					title="Learn Preact"
 					description="If you're new to Preact, try the interactive tutorial to learn important concepts"
 					href="https://preactjs.com/tutorial"
@@ -26,14 +26,5 @@ export function Home() {
 				/>
 			</section>
 		</div>
-	);
-}
-
-function Resource(props) {
-	return (
-		<a href={props.href} target="_blank" class="resource">
-			<h2>{props.title}</h2>
-			<p>{props.description}</p>
-		</a>
 	);
 }

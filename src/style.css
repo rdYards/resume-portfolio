@@ -1,70 +1,121 @@
 :root {
-	font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-	line-height: 1.5;
-	font-weight: 400;
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.25;
+    font-weight: 400;
 
-	color: #222;
-	background-color: #ffffff;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
 
-	font-synthesis: none;
-	text-rendering: optimizeLegibility;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-	-webkit-text-size-adjust: 100%;
+    /* Primary Colors */
+    --primary-color: #00375a; /* prussian-blue */
+    --secondary-color: #003f66; /* indigo-dye */
+    --triandary-color: #004B7A;
+
+    /* Secondary Colors */
+    --accent-color-1: #166891ff; /* bice-blue */
+    --accent-color-2: #047a8cff; /* teal */
+
+    /* Accent Color */
+    --accent-color: #08bdbdff; /* verdigris */
+
+    /* Other specific colors if needed */
+    --header-color: #014867ff; /* indigo-dye-2 */
+    --button-primary-bg: #00375aff; /* prussian-blue */
+    --button-primary-text: #ffffff;
+    --button-secondary-bg: #166891ff; /* bice-blue */
+    --button-secondary-text: #ffffff;
+
+    /* Additional colors if needed for theme consistency */
+    --background-color: #003f66; /* indigo-dye */
+    --text-color-dark-primary: #00375a; /* Prussian Blue */
+    --text-color-dark-secondary: #002138; /* Oxford Blue */
+    --text-color-light-primary: #C7CCD0; /* Silver */
+    --text-color-light-secondary: #e9ebec; /* Grey text color */
 }
 
 body {
-	margin: 0;
+    background-color: var(--background-color);
+    color: var(--text-color-primary);
+    margin: 0;
 }
 
 #app {
-	display: flex;
-	flex-direction: column;
-	min-height: 100vh;
-}
-
-header {
-	display: flex;
-	justify-content: flex-end;
-	background-color: #673ab8;
-}
-
-header nav {
-	display: flex;
-}
-
-header a {
-	color: #fff;
-	padding: 0.75rem;
-	text-decoration: none;
-}
-
-header a.active {
-	background-color: #0005;
-}
-
-header a:hover {
-	background-color: #0008;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 main {
-	flex: auto;
-	display: flex;
-	align-items: center;
-	max-width: 1280px;
-	margin: 0 auto;
-	text-align: center;
+    flex: auto;
+    display: flex;
+    align-items: center;
+    max-width: 1280px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Headers */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--text-color-light);
+}
+
+/* Buttons */
+button.primary {
+    background-color: var(--button-primary-bg);
+    color: var(--button-primary-text);
+    cursor: pointer;
+}
+
+button.primary:hover {
+    background-color: var(--accent-color-2); /* teal */
+}
+
+button.secondary {
+    background-color: var(--button-secondary-bg);
+    color: var(--button-secondary-text);
+    cursor: pointer;
+}
+
+button.secondary:hover {
+    background-color: #08bdbdff; /* verdigris */
+}
+
+/* Links */
+a {
+    color: var(--text-color-light-primary);
+}
+
+a:hover {
+    color: var(--text-color-light-secondary); /* teal */
+}
+
+/* Forms */
+input,
+textarea {
+    border: 1px solid var(--secondary-color);
+}
+
+input:focus,
+textarea:focus {
+    border-color: var(--accent-color);
+    outline: none;
 }
 
 @media (max-width: 639px) {
-	main {
-		margin: 2rem;
-	}
-}
-
-@media (prefers-color-scheme: dark) {
-	:root {
-		color: #ccc;
-		background-color: #1a1a1a;
-	}
+    main {
+        margin: 2rem;
+    }
+    .home section {
+        margin-top: 5rem;
+        grid-template-columns: 1fr;
+        row-gap: 1rem;
+    }
 }
