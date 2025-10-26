@@ -13,9 +13,6 @@
 .contacts a {
     margin: 0rem 0.5rem;
 }
-.contacts a:hover {
-    background-color: transparent;
-}
 
 .icon {
     display: block;
