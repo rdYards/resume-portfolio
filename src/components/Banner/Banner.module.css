@@ -1,2 +1,82 @@
-@import 'src/style.css';
+@import "../../style.css";
 
+.resource.light-mode {
+    background-color: var(--background-color-light);
+    color: var(--text-color-dark-primary);
+}
+.resource.light-mode h2 {
+    color: var(--text-color-dark-primary);
+}
+
+.resource.dark-mode {
+    background-color: var(--primary-color);
+    color: var(--text-color-light-primary);
+}
+.resource.dark-mode h2 {
+    color: var(--text-color-light-primary);
+}
+
+.resource {
+    z-index: 1;
+    box-sizing: border-box;
+    display: block;
+    border-radius: 0.5rem;
+    text-align: left;
+    text-decoration: none;
+    overflow: hidden;
+    pointer-events: all;
+}
+
+.resource .content {
+    margin: 0.5rem 0;
+    padding: 0.25rem 1.25rem;
+}
+
+.prog_banner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    padding: 0.25rem 0.75rem;
+    border-radius: 0.5rem 0rem 0.25rem 0rem;
+}
+.inprogress {
+    background-color: green;
+}
+.paused {
+    background-color: orange;
+}
+.canceled {
+    background-color: red;
+}
+.complete {
+    background-color: gold;
+}
+
+.banner_wrapper {
+    position: relative;
+    max-width: 600px;
+    max-height: 400px;
+    font: inherit;
+    font-family: inherit;
+    font-weight: inherit;
+    margin: 1.25rem;
+    pointer-events: none;
+}
+.banner_wrapper::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 3px solid transparent;
+    transition: border-color 0.3s;
+    background: none;
+    transition: background 0.3s;
+    z-index: 4;
+    border-radius: 0.5rem;
+}
+.banner_wrapper:hover::after {
+    border-color: var(--accent-color);
+}

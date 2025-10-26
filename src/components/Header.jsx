@@ -17,6 +17,13 @@ export function Header() {
         <a href="/credentials" class={url == "/credentials" && "active"}>
           Credentials
         </a>
+        <a
+          href="/aeastman_Resume.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Resume
+        </a>
       </nav>
     </header>
   );

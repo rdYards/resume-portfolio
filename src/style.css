@@ -12,33 +12,34 @@
     /* Primary Colors */
     --primary-color: #00375a; /* prussian-blue */
     --secondary-color: #003f66; /* indigo-dye */
-    --triandary-color: #004B7A;
+    --triandary-color: #004b7a;
 
     /* Secondary Colors */
-    --accent-color-1: #166891ff; /* bice-blue */
-    --accent-color-2: #047a8cff; /* teal */
+    --accent-color-1: #166891; /* bice-blue */
+    --accent-color-2: #047a8c; /* teal */
 
     /* Accent Color */
-    --accent-color: #08bdbdff; /* verdigris */
+    --accent-color: #08bdbd; /* verdigris */
 
     /* Other specific colors if needed */
-    --header-color: #014867ff; /* indigo-dye-2 */
-    --button-primary-bg: #00375aff; /* prussian-blue */
-    --button-primary-text: #ffffff;
-    --button-secondary-bg: #166891ff; /* bice-blue */
+    --header-color: #014867; /* indigo-dye-2 */
+    --button-primary-bg: #00375a; /* prussian-blue */
+    --button-primary-text: #ffff;
+    --button-secondary-bg: #166891; /* bice-blue */
     --button-secondary-text: #ffffff;
 
     /* Additional colors if needed for theme consistency */
-    --background-color: #003f66; /* indigo-dye */
+    --background-color-dark: #003f66; /* indigo-dye */
+    --background-color-light: #e9ebec; /* Grey text color */
     --text-color-dark-primary: #00375a; /* Prussian Blue */
     --text-color-dark-secondary: #002138; /* Oxford Blue */
-    --text-color-light-primary: #C7CCD0; /* Silver */
+    --text-color-light-primary: #c7ccd0; /* Silver */
     --text-color-light-secondary: #e9ebec; /* Grey text color */
 }
 
 body {
-    background-color: var(--background-color);
-    color: var(--text-color-primary);
+    background-color: var(--background-color-dark);
+    color: var(--text-color-dark-secondary);
     margin: 0;
 }
 
@@ -51,10 +52,12 @@ body {
 main {
     flex: auto;
     display: flex;
-    align-items: center;
-    max-width: 1280px;
+    flex-direction: column;
+}
+
+section {
+    max-width: 90%;
     margin: 0 auto;
-    text-align: center;
 }
 
 /* Headers */
@@ -64,7 +67,7 @@ h3,
 h4,
 h5,
 h6 {
-    color: var(--text-color-light);
+    color: var(--text-color-light-primary);
 }
 
 /* Buttons */
@@ -75,7 +78,7 @@ button.primary {
 }
 
 button.primary:hover {
-    background-color: var(--accent-color-2); /* teal */
+    background-color: var(--accent-color-2);
 }
 
 button.secondary {
@@ -85,7 +88,7 @@ button.secondary {
 }
 
 button.secondary:hover {
-    background-color: #08bdbdff; /* verdigris */
+    background-color: var(--triandary-color);
 }
 
 /* Links */
@@ -112,10 +115,5 @@ textarea:focus {
 @media (max-width: 639px) {
     main {
         margin: 2rem;
-    }
-    .home section {
-        margin-top: 5rem;
-        grid-template-columns: 1fr;
-        row-gap: 1rem;
     }
 }
