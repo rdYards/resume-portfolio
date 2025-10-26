@@ -1,0 +1,35 @@
+@import "../../style.css";
+
+.contacts {
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+    background-color: var(--background-color-light);
+    padding: 0.5rem 0.35rem;
+    border-radius: 1.75rem 0.35rem;
+    align-items: center;
+}
+
+.contacts a {
+    margin: 0rem 0.5rem;
+}
+.contacts a:hover {
+    background-color: transparent;
+}
+
+.icon {
+    display: block;
+    max-height: 35px;
+    max-width: 35px;
+    pointer-events: none;
+}
+
+.resume {
+    text-decoration: none;
+    background-color: var(--text-color-dark-secondary);
+    color: var(--text-color-light-primary);
+    font-weight: 800;
+    padding: 0.5rem;
+    margin-left: 1rem;
+    border-radius: 1.25rem 0.35rem;
+}
