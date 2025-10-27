@@ -1,0 +1,48 @@
+@import "../../style.css";
+
+.cred_banner_wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    max-width: 100%;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+.image_container {
+    margin-right: 1.5rem;
+    flex-shrink: 0;
+}
+
+.image {
+    width: auto;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding: 0 1.5rem;
+    border-radius: .5rem;
+}
+
+.content.light-mode {
+    background-color: var(--background-color-light);
+    color: var(--text-color-dark-primary);
+} .content.light-mode h2 {
+    text-align: left;
+    color: var(--text-color-dark-primary);
+}
+
+.content.dark-mode {
+    background-color: var(--primary-color);
+    color: var(--text-color-light-primary);
+} .content.dark-mode h2 {
+    text-align: left;
+    color: var(--text-color-light-primary);
+}
