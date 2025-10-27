@@ -1,1 +1,52 @@
-@import "./style.css";
+@import "../../style.css";
+
+.project_grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+.cred_grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+}
+
+.contact_content {
+    padding: 0 0 0 3rem;
+    margin-left: auto;
+}
+.contact_content p {
+    margin-bottom: 1.5rem;
+    color: var(--text-color-light-secondary);
+}
+
+.welcome_content {
+    margin-right: auto;
+}
+.welcome_content h1 {
+    margin: 0;
+    padding: 0;
+}
+.welcome_content h3 {
+    font-weight: 450;
+    margin: 0;
+    padding: 0;
+}
+.welcome_content p {
+    font-style: italic;
+    color: var(--text-color-light-secondary);
+}
+
+.skills_grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem 8rem;
+}

@@ -1,11 +1,10 @@
-// Define the Skills component
-const Skills = ({ title, nthSkills }) => {
+const Skills = ({ title, skills }) => {
   return (
     <div>
       <h2>{title}</h2>
       <ul>
-        {Array.from({ length: nthSkills }, (_, i) => (
-          <li key={i}>Skill {i + 1}</li>
+        {skills.map((skill, i) => (
+          <li key={i}>{skill}</li>
         ))}
       </ul>
     </div>

@@ -33,8 +33,8 @@
     --background-color-light: #e9ebec; /* Grey text color */
     --text-color-dark-primary: #00375a; /* Prussian Blue */
     --text-color-dark-secondary: #002138; /* Oxford Blue */
-    --text-color-light-primary: #c7ccd0; /* Silver */
-    --text-color-light-secondary: #e9ebec; /* Grey text color */
+    --text-color-light-primary: #e9ebec; /* Silver */
+    --text-color-light-secondary: #c7ccd0; /* Grey text color */
 }
 
 body {
@@ -57,7 +57,9 @@ main {
 
 section {
     max-width: 90%;
-    margin: 0 auto;
+    margin: 6rem auto;
+} section h2 {
+    text-align: center;
 }
 
 /* Headers */
@@ -97,7 +99,7 @@ a {
 }
 
 a:hover {
-    color: var(--text-color-light-secondary); /* teal */
+    color: var(--text-color-light-secondary);
 }
 
 /* Forms */
@@ -110,6 +112,18 @@ input:focus,
 textarea:focus {
     border-color: var(--accent-color);
     outline: none;
+}
+
+ul, li {
+    color: var(--text-color-light-secondary);
+}
+
+img {
+    max-height: 512px;
+    width: auto;
+    display: block;
+    border-radius: .35rem;
+    pointer-events: none;
 }
 
 @media (max-width: 639px) {
