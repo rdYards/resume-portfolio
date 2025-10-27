@@ -12,13 +12,17 @@ export function Banner(props) {
     prog_banner = (
       <div class={`${styles.prog_banner} ${styles.paused}`}>Paused</div>
     );
-  } else if (props.prog === "canceled") {
+  } else if (props.prog === "cancelled") {
     prog_banner = (
-      <div class={`${styles.prog_banner} ${styles.canceled}`}>Canceled</div>
+      <div class={`${styles.prog_banner} ${styles.canceled}`}>Cancelled</div>
     );
   } else if (props.prog === "complete") {
     prog_banner = (
       <div class={`${styles.prog_banner} ${styles.complete}`}>Complete</div>
+    );
+  } else if (props.prog === "updated") {
+    prog_banner = (
+      <div class={`${styles.prog_banner} ${styles.updated}`}>Recently Updated</div>
     );
   } else {
     // Default case
