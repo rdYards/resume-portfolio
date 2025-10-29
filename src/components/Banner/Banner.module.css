@@ -81,7 +81,6 @@
     border: 3px solid transparent;
     transition: border-color 0.3s;
     background: none;
-    transition: background 0.3s;
     z-index: 4;
     border-radius: 0.5rem;
 }

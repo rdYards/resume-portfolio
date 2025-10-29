@@ -3,8 +3,53 @@ import { Banner } from "../../components/Banner/Banner";
 import { Contacts } from "../../components/Contacts/Contacts";
 import Skills from "../../components/Skills";
 import { CredBanner } from "../../components/CredBanner/CredBanner";
+import { Timeline } from "../../components/Timeline/Timeline";
 
 export function Home() {
+  // Data for timeline
+  const timelineData = [
+    {
+      icon: "src/assets/cofo_logo.png",
+      title: "IT Student Leader",
+      timeline: "May 2025 - Present",
+      location: "College of the Ozarks, Information Technology Deparqtment; Point Lookout, MS - (On Site)",
+      summary:
+        "Leading a dynamic team while instructing and training follow coworkers. While developing and implementing improvements to increase company performance and reduce costs.",
+      skills: ["Human Management", "Scheduling", "Team Communication", "Microsoft Teams"],
+      href: "https://www.cofo.edu/Workstation",
+    },
+    {
+      icon: "src/assets/cofo_logo.png",
+      title: "IT Technician",
+      timeline: "August 2023 - May 2025",
+      location: "College of the Ozarks, Information Technology Deparqtment; Point Lookout, MS - (On Site)",
+      summary:
+        "Working with a dynamic team in an active environment, correcting system faults to maintain uptime of the school's network infrastructure. At the same time, producing and deployments improvements to increase company performance and reduce costs.",
+      skills: ["Windows 11", "MacOS 10.14+", "Microsoft Configuration Manager (MCM)", "PDQ", "Hyper-V", "LogMeIn Suite"],
+      href: "https://www.cofo.edu/Workstation",
+    },
+    {
+      icon: "src/assets/cofo_logo.png",
+      title: "Cook Assistant and Associate,",
+      timeline: "August 2022 - July 2023",
+      location: "College of the Ozarks, Pearl Rogers Dining Center; Point Lookout, MS - (On Site)",
+      summary:
+        "Worked a multipurpose role on a dynamic schedule to assist with various needs, including cook assistant and dishwasher duties. While, creating a favorable environment for customers.",
+      skills: ["Teamwork", "Communication", "Customer Service", "Time Management"],
+      href: "https://www.cofo.edu/Workstation",
+    },
+    {
+      icon: "src/assets/walmart_icon.svg",
+      title: "CAP2 Stocking Associate,",
+      timeline: "September 2020 - December 2023",
+      location: "Walmart Inc; Paola, KS - (On Site)",
+      summary:
+        "Worked with a team to manage inventory in a time-sensitive environment. Managing inventory to ensure product availability to customers.",
+      skills: ["Time Managment", "Inventory Management", "Customer Service", "Manual Labor"],
+      href: "https://careers.walmart.com/",
+    },
+  ];
+
   return (
     <>
       {/* Welcome */}
@@ -97,6 +142,7 @@ export function Home() {
       {/* Work Expirence */}
       <section>
         <h4>Work Expirence</h4>
+        <Timeline data={timelineData} />
       </section>
       {/* Skills */}
       <section>
