@@ -3,7 +3,7 @@ import { ProjectHeader } from "../../components/ProjectHeader/ProjectHeader";
 
 export function Grasshopper() {
   return (
-    <>
+    <section class="page">
       <ProjectHeader
         title="Grasshopper"
         prog={"complete"}
@@ -12,6 +12,6 @@ export function Grasshopper() {
           "Grasshopper is a voice-activated assistant application built to be an assistant in personal RPG campaigns."
         }
       />
-    </>
+    </section>
   );
 }

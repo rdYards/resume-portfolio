@@ -3,7 +3,7 @@ import { ProjectHeader } from "../../components/ProjectHeader/ProjectHeader";
 
 export function HomeLab() {
   return (
-    <>
+    <section class="page">
       <ProjectHeader
         title="Home Lab"
         prog={"in-progress"}
@@ -12,6 +12,6 @@ export function HomeLab() {
           "Personal lab to learn networking and DevOps. An attempt to built my own internet."
         }
       />
-    </>
+    </section>
   );
 }

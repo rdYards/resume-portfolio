@@ -3,7 +3,7 @@ import { ProjectHeader } from "../../components/ProjectHeader/ProjectHeader";
 
 export function ResumeWebsite() {
   return (
-    <>
+    <section class="page">
       <ProjectHeader
         title="Resume Website"
         prog={"in-progress"}
@@ -12,6 +12,6 @@ export function ResumeWebsite() {
           "Website to host further details featured on my resume, and an opportunity to highlight projects previously done or actively done."
         }
       />
-    </>
+    </section>
   );
 }
