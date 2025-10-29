@@ -73,21 +73,21 @@ export function Home() {
             mode="light"
             title="Grasshopper"
             description="Grasshopper is a voice-activated assistant application built to be an assistant in personal RPG campaigns."
-            href="/project"
+            href="/grasshopper"
           />
           <Banner
             prog="in-progress"
             mode="light"
             title="Home Lab"
             description="Personal lab to learn networking and DevOps. An attempt to built my own internet."
-            href="/project"
+            href="/home-lab"
           />
           <Banner
             prog="paused"
             mode="light"
             title="Eldritch Trains"
             description="Eldritch Trains is a 2D top-down game built using Rust and the Macroquad framework. The game was started as a way to get started with the rust programming language."
-            href="/project"
+            href="/eldritch-trains"
           />
         </div>
         <a href="/project" class="button-primary">
