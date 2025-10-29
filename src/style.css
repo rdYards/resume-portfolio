@@ -59,7 +59,7 @@ section {
     flex: auto;
     display: flex;
     flex-direction: column;
-    max-width: 90%;
+    width: 85%;
     margin: 5rem auto;
 }
 section h2,
@@ -167,8 +167,8 @@ img {
     pointer-events: none;
 }
 
-@media (max-width: 639px) {
-    main {
-        margin: 2rem;
+@media (max-width: 960px) {
+    section {
+        width: 95%;
     }
 }
