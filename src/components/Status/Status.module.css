@@ -1,0 +1,34 @@
+@import "../../style.css";
+
+.prog_banner {
+    box-sizing: border-box;
+    border-radius: 0.5rem;
+    text-align: center;
+    font-weight: 500;
+    padding: 0.25rem 0.75rem;
+    display: block;
+    font-size: 1.25rem;
+    max-width: 150px;
+    pointer-events: none;
+    margin: 0 1rem;
+    color: var(--text-color-dark-secondary);
+    align-items: center;
+}
+.inprogress {
+    background-color: #4f772d;
+}
+.paused {
+    background-color: #4d908e;
+}
+.canceled {
+    background-color: #f94144;
+}
+.complete {
+    background-color: #277da1;
+}
+.updated {
+    background-color: #f8961e;
+} 
+.tbd {
+    background-color: #577590;
+}
