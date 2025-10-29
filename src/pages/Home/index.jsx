@@ -12,13 +12,18 @@ export function Home() {
         <div class="welcome_content">
           <h1>Alexander Eastman</h1>
           <h3>Networking, Software, Hardware</h3>
-          <p>Building my own tech world. From the computer to the router.</p>
+          <p>
+            A resume boils down to two aspects: Proof of Work and Proof of
+            Knowledge.
+          </p>
+          <p>Let me show you my Proofs.</p>
         </div>
         <img src="src/assets/code.png" alt="Professionally done code" />
       </section>
       {/* Credentials */}
       <section>
-        <h2>Credentials</h2>
+        <h2>Proof of Knowledge</h2>
+        <h4>Credentials</h4>
         <div class="cred_grid">
           <CredBanner
             mode="light"
@@ -47,51 +52,55 @@ export function Home() {
             image="src/assets/Security+-svg.svg"
           />
         </div>
+        <a href="/credentials" class="button-primary">
+          See More
+        </a>
       </section>
       {/* Projects */}
       <section>
-        <h2>Projects</h2>
+        <h2>Proof of Work</h2>
+        <h4>Projects</h4>
         <div class="project_grid">
           <Banner
             prog="in-progress"
             mode="light"
-            title="Learn Preact"
-            description="If you're new to Preact, try the interactive tutorial to learn important concepts"
-            href="/project"
+            title="Resume Website"
+            description="Website to host further details featured on my resume, and an opportunity to highlight projects previously done or actively done."
+            href="/resume-website"
           />
           <Banner
             prog="complete"
-            mode="dark"
-            title="Learn Preact"
-            description="If you're new to Preact, try the interactive tutorial to learn important concepts"
-            href="https://preactjs.com/tutorial"
+            mode="light"
+            title="Grasshopper"
+            description="Grasshopper is a voice-activated assistant application built to be an assistant in personal RPG campaigns."
+            href="/project"
           />
           <Banner
-            prog="cancelled"
+            prog="in-progress"
             mode="light"
-            title="Learn Preact"
-            description="If you're new to Preact, try the interactive tutorial to learn important concepts"
+            title="Home Lab"
+            description="Personal lab to learn networking and DevOps. An attempt to built my own internet."
             href="/project"
           />
           <Banner
             prog="paused"
             mode="light"
-            title="Learn Preact"
-            description="If you're new to Preact, try the interactive tutorial to learn important concepts"
-            href="/project"
-          />
-          <Banner
-            prog="updated"
-            mode="light"
-            title="Learn Preact"
-            description="If you're new to Preact, try the interactive tutorial to learn important concepts"
+            title="Eldritch Trains"
+            description="Eldritch Trains is a 2D top-down game built using Rust and the Macroquad framework. The game was started as a way to get started with the rust programming language."
             href="/project"
           />
         </div>
+        <a href="/project" class="button-primary">
+          See More
+        </a>
+      </section>
+      {/* Work Expirence */}
+      <section>
+        <h4>Work Expirence</h4>
       </section>
       {/* Skills */}
       <section>
-        <h2>Skills</h2>
+        <h4>Skills</h4>
         <div class="skills_grid">
           <Skills
             title="Linux Systems"
@@ -127,7 +136,7 @@ export function Home() {
             skills={[
               "Powershell",
               "Bash",
-              "K3s",
+              "Kubernetes",
               "Docker",
               "Git",
               "Gitea/GitLab/GitHub (CI-CD)",
@@ -178,33 +187,34 @@ export function Home() {
           />
         </div>
       </section>
-      {/* Contact */}
+      {/* About me */}
       <section class="container">
         <div>
           <img
             src="src/assets/suit_and_tie.jpg"
-            alt="A nerd in a nice suit"
+            alt="A suite a professional would wear"
           />
         </div>
         <div class="contact_content">
           <h2>About Alexander</h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque
-            faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi
-            pretium tellus duis convallis. Tempus leo eu aenean sed diam urna
-            tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas.
-            Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut
-            hendrerit semper vel class aptent taciti sociosqu. Ad litora
-            torquent per conubia nostra inceptos himenaeos.
+            A tech enthusiast who works with Networking, Software, and Hardware.
+            With skills in the creation and management of tech stacks from the
+            frontend to the OS running the servers. Soon to have a Bachelor of
+            Science in Computer Science with a Minor in Cybersecurity from
+            College of the Ozarks. With already obtained Certifications from
+            CompTIA, Network+, and Security+. With skills in Docker, Kubernetes,
+            Linux, Windows, and more. Enthusiastic and passionate professional
+            passionate about building cyber solutions to build the next LAN,
+            MAN, and WAN.{" "}
           </p>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque
-            faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi
-            pretium tellus duis convallis. Tempus leo eu aenean sed diam urna
-            tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas.
-            Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut
-            hendrerit semper vel class aptent taciti sociosqu. Ad litora
-            torquent per conubia nostra inceptos himenaeos.
+            Proven ability in collaboration with technical and operational
+            teams, with a strong belief in automation and optimization with
+            continuous delivery. Individually designed and deployed CI/CD
+            pipelines, working with the requirements of stakeholders to push
+            system architectures and workflow enhancements. A strong foundation
+            to propel any company to greater heights.
           </p>
           <Contacts />
         </div>
