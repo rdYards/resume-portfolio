@@ -12,30 +12,50 @@ export function Home() {
       icon: "src/assets/cofo_logo.png",
       title: "IT Student Leader",
       timeline: "May 2025 - Present",
-      location: "College of the Ozarks, Information Technology Deparqtment; Point Lookout, MS - (On Site)",
+      location:
+        "College of the Ozarks, Information Technology Deparqtment; Point Lookout, MS - (On Site)",
       summary:
         "Leading a dynamic team while instructing and training follow coworkers. While developing and implementing improvements to increase company performance and reduce costs.",
-      skills: ["Human Management", "Scheduling", "Team Communication", "Microsoft Teams"],
+      skills: [
+        "Human Management",
+        "Scheduling",
+        "Team Communication",
+        "Microsoft Teams",
+      ],
       href: "https://www.cofo.edu/Workstation",
     },
     {
       icon: "src/assets/cofo_logo.png",
       title: "IT Technician",
       timeline: "August 2023 - May 2025",
-      location: "College of the Ozarks, Information Technology Deparqtment; Point Lookout, MS - (On Site)",
+      location:
+        "College of the Ozarks, Information Technology Deparqtment; Point Lookout, MS - (On Site)",
       summary:
         "Working with a dynamic team in an active environment, correcting system faults to maintain uptime of the school's network infrastructure. At the same time, producing and deployments improvements to increase company performance and reduce costs.",
-      skills: ["Windows 11", "MacOS 10.14+", "Microsoft Configuration Manager (MCM)", "PDQ", "Hyper-V", "LogMeIn Suite"],
+      skills: [
+        "Windows 11",
+        "MacOS 10.14+",
+        "Microsoft Configuration Manager (MCM)",
+        "PDQ",
+        "Hyper-V",
+        "LogMeIn Suite",
+      ],
       href: "https://www.cofo.edu/Workstation",
     },
     {
       icon: "src/assets/cofo_logo.png",
       title: "Cook Assistant and Associate,",
       timeline: "August 2022 - July 2023",
-      location: "College of the Ozarks, Pearl Rogers Dining Center; Point Lookout, MS - (On Site)",
+      location:
+        "College of the Ozarks, Pearl Rogers Dining Center; Point Lookout, MS - (On Site)",
       summary:
         "Worked a multipurpose role on a dynamic schedule to assist with various needs, including cook assistant and dishwasher duties. While, creating a favorable environment for customers.",
-      skills: ["Teamwork", "Communication", "Customer Service", "Time Management"],
+      skills: [
+        "Teamwork",
+        "Communication",
+        "Customer Service",
+        "Time Management",
+      ],
       href: "https://www.cofo.edu/Workstation",
     },
     {
@@ -45,7 +65,12 @@ export function Home() {
       location: "Walmart Inc; Paola, KS - (On Site)",
       summary:
         "Worked with a team to manage inventory in a time-sensitive environment. Managing inventory to ensure product availability to customers.",
-      skills: ["Time Managment", "Inventory Management", "Customer Service", "Manual Labor"],
+      skills: [
+        "Time Managment",
+        "Inventory Management",
+        "Customer Service",
+        "Manual Labor",
+      ],
       href: "https://careers.walmart.com/",
     },
   ];
@@ -151,84 +176,88 @@ export function Home() {
           <Skills
             title="Linux Systems"
             skills={[
-              "Debian",
-              "Ubuntu",
-              "Pop-OS",
-              "Arch",
-              "EndeavourOS",
-              "VanillaOS",
-              "Fedora",
-              "Rocky Linux",
+              ["Debian", "/home-lab"],
+              ["Ubuntu", "/home-lab"],
+              ["Pop-OS", "/home-lab"],
+              ["Arch", "/home-lab"],
+              ["EndeavourOS", "/home-lab"],
+              ["Fedora", "/home-lab"],
+              ["Rocky Linux", "/home-lab"],
             ]}
           />
           <Skills
             title="Networking"
             skills={[
-              "TCP/IP",
-              "Network Management",
-              "Virtualization",
-              "Network Architecture",
-              "Network Protocols",
-              "Network Automation",
-              "Network Documentation",
+              ["OSI model layers", "/credentials#comptia_network+"],
+              ["Networking appliances", "/credentials#comptia_network+"],
+              ["Cloud concepts", "/credentials#comptia_network+"],
+              ["Ports and protocols", "/credentials#comptia_network+"],
+              ["Transmission media", "/credentials#comptia_network+"],
+              ["Network topologies", "/credentials#comptia_network+"],
             ]}
           />
           <Skills
             title="Software"
-            skills={["Rust", "Python", "Go", "Java", "Javascript (Preact)"]}
+            skills={[
+              ["Rust", "/eldritch-trains"],
+              ["Python", "/grasshopper"],
+              ["Go", "/home-lab"],
+              ["Java", "/credentials#bachelor_of_science_in_computer_science"],
+              ["Javascript (Preact)", "/resume-website"],
+            ]}
           />
           <Skills
             title="DevOps"
             skills={[
-              "Powershell",
-              "Bash",
-              "Kubernetes",
-              "Docker",
-              "Git",
-              "Gitea/GitLab/GitHub (CI-CD)",
-              "Proxmox",
+              ["Powershell", "/home-lab"],
+              ["Bash", "/home-lab"],
+              ["Kubernetes", "/home-lab"],
+              ["Docker", "/home-lab"],
+              ["Git", "/home-lab"],
+              ["Gitea/GitLab/GitHub (CI-CD)", "/resume-website"],
+              ["Proxmox", "/home-lab"],
             ]}
           />
           <Skills
             title="Open-Source LLMs"
             skills={[
-              "Ollama (Docker)",
-              "Ollama (python SDK)",
-              "Deepseek family",
-              "Gwen family",
-              "Gemma family",
-              "Mistral family",
+              ["Ollama (Docker)", , "/home-lab"],
+              ["Ollama (python SDK)", , "/grasshopper"],
+              ["Deepseek family", , "/home-lab"],
+              ["Gwen family", , "/home-lab"],
+              ["Gemma family", , "/home-lab"],
+              ["Mistral family", , "/home-lab"],
             ]}
           />
           <Skills
             title="IT"
             skills={[
-              "Windows",
-              "MacOS",
-              "Microsoft Configuration Manager (MCM)",
-              "PDQ",
-              "Hyper-V",
-              "LogMeIn Suite",
+              ["Windows", "https://www.cofo.edu/Workstation"],
+              ["MacOS", "https://www.cofo.edu/Workstation"],
+              ["Microsoft Configuration Manager (MCM)", "https://www.cofo.edu/Workstation"],
+              ["PDQ", "https://www.cofo.edu/Workstation"],
+              ["Hyper-V", "https://www.cofo.edu/Workstation"],
+              ["LogMeIn Suite", "https://www.cofo.edu/Workstation"],
             ]}
           />
           <Skills
             title="Homelab"
             skills={[
-              "Proxmox",
-              "Gitea",
-              "Cisco UCS C210 M2",
-              "Cisco Catalyst 2960-X",
-              "Netgear Nighthawk R8000P",
-              "NAS samba",
+              ["Proxmox", "/home-lab"],
+              ["Gitea", "/home-lab"],
+              ["Cisco UCS C210 M2", "/home-lab"],
+              ["Cisco Catalyst 2960-X", "/home-lab"],
+              ["Netgear Nighthawk R8000P", "/home-lab"],
+              ["NAS samba", "/home-lab"],
             ]}
           />
           <Skills
             title="Leadership"
             skills={[
-              "Human management",
-              "Scheduling",
-              "Team Communication",
-              "Microsoft Teams",
+              ["Human management", "https://www.cofo.edu/Workstation"],
+              ["Scheduling", "https://www.cofo.edu/Workstation"],
+              ["Team Communication", "https://www.cofo.edu/Workstation"],
+              ["Microsoft Teams", "https://www.cofo.edu/Workstation"],
             ]}
           />
         </div>
