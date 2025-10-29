@@ -5,6 +5,10 @@ import { Header } from "./components/Header.jsx";
 import { Home } from "./pages/Home/index.jsx";
 import { Credentials } from "./pages/Credentials/index.jsx";
 import { Project } from "./pages/Project/index.jsx";
+import { ResumeWebsite } from "./pages/Projects/resume-website.jsx"
+import { Grasshopper } from "./pages/Projects/grasshopper.jsx";
+import { EldritchTrains } from "./pages/Projects/eldritch-trains.jsx";
+import { HomeLab } from "./pages/Projects/home-lab.jsx";
 import { NotFound } from "./pages/_404.jsx";
 import "./style.css";
 
@@ -17,6 +21,10 @@ export function App() {
           <Route path="/" component={Home} />
           <Route path="/credentials" component={Credentials} />
           <Route path="/project" component={Project} />
+          <Route path="/eldritch-trains" component={EldritchTrains} />
+          <Route path="/grasshopper" component={Grasshopper} />
+          <Route path="/home-lab" component={HomeLab} />
+          <Route path="/resume-website" component={ResumeWebsite} />
           <Route default component={NotFound} />
         </Router>
       </main>
