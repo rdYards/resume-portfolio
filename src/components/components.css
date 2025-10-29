@@ -27,6 +27,6 @@ header a:hover {
 
 header object {
     margin-left: 0.5rem;
-    max-height: 40px;
+    max-height: 35px;
     transform: rotate(30deg);
 }
