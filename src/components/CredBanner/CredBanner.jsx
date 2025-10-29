@@ -2,7 +2,10 @@ import styles from "./CredBanner.module.css";
 
 export function CredBanner(props) {
   return (
-    <div class={styles.cred_banner_wrapper}>
+    <div
+      id={props.title.toLowerCase().replace(/ /g, "_")}
+      class={styles.cred_banner_wrapper}
+    >
       <div class={styles.image_container}>
         {props.image && (
           <object
