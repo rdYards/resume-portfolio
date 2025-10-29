@@ -27,6 +27,7 @@
     text-decoration: none;
     overflow: hidden;
     pointer-events: all;
+    height: 100%;
 }
 
 .resource .content {
@@ -56,6 +57,9 @@
 }
 .updated {
     background-color: #f8961e;
+} 
+.tbd {
+    background-color: #577590;
 }
 
 .banner_wrapper {

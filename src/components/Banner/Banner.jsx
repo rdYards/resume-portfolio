@@ -24,6 +24,10 @@ export function Banner(props) {
     prog_banner = (
       <div class={`${styles.prog_banner} ${styles.updated}`}>Recently Updated</div>
     );
+  } else if (props.prog === "tbd") {
+    prog_banner = (
+      <div class={`${styles.prog_banner} ${styles.tbd}`}>To Be Determined</div>
+    );
   } else {
     // Default case
     prog_banner = null;
@@ -34,7 +38,6 @@ export function Banner(props) {
       {prog_banner}
       <a
         href={props.href}
-        target="_blank"
         class={`${styles.resource} ${styles[`${props.mode}-mode`]}`}
       >
         <div class={styles.content}>
