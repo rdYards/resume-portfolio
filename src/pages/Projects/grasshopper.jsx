@@ -11,6 +11,16 @@ export function Grasshopper() {
         summary={
           "Grasshopper is a voice-activated assistant application built to be an assistant in personal RPG campaigns."
         }
+        skills={[
+          "Ollama (Python SDK",
+          "Ollama (Docker)",
+          "RealtimeSTT",
+          "Kokoro-ONNX",
+          "Kokoro-TTS",
+          "Git",
+          "Speech to Text",
+          "Text to Speech",
+        ]}
       />
     </section>
   );

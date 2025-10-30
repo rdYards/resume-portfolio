@@ -1,5 +1,6 @@
 import styles from "./ProjectHeader.module.css";
 import { Status } from "../Status/Status";
+import { SkillsBanner } from "../SkillsBanner";
 
 export function ProjectHeader(props) {
   const simplifiedLink = props.link.replace(/^https?:\/\//, "");
@@ -16,8 +17,9 @@ export function ProjectHeader(props) {
           </div>
           <a href={props.link}>{simplifiedLink}</a>
         </div>
-        <p class={styles.summary}>{props.summary}</p>
+        <div class={styles.summary}>{props.summary}</div>
       </div>
+      <SkillsBanner skills={props.skills} />
     </>
   );
 }

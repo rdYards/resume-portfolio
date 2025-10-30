@@ -1,2 +1,29 @@
-/*@import "../../style.css";*/
+@import "../../style.css";
 
+.page p {
+    color: var(--text-color-light-primary);
+    margin: 0 6rem;
+}
+
+.page-section {
+    color: var(--text-color-light-primary);
+    margin: 1rem 0;
+    display: flex;
+    align-items: center;
+}
+
+/* Left alignment */
+.left {
+    justify-content: flex-start;
+}
+.left img {
+    margin-right: 1rem;
+}
+
+/* Right alignment */
+.right {
+    justify-content: flex-end;
+}
+.right img {
+    margin-left: 1rem;
+}
