@@ -165,6 +165,7 @@ img {
     display: block;
     border-radius: 0.35rem;
     pointer-events: none;
+    margin: 0 1rem;
 }
 
 @media (max-width: 960px) {

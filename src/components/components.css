@@ -30,3 +30,17 @@ header object {
     max-height: 35px;
     transform: rotate(30deg);
 }
+
+.skills-banner {
+    flex-wrap: wrap;
+    margin: 1rem 2rem;
+    display: flex;
+    flex-direction: row;
+    gap: .5rem;
+}
+.banner-skills {
+    background-color: var(--accent-color-2);
+    color: var(--text-color-dark-secondary);
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.5rem;
+}

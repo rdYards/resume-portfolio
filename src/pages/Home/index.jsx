@@ -6,75 +6,6 @@ import { CredBanner } from "../../components/CredBanner/CredBanner";
 import { Timeline } from "../../components/Timeline/Timeline";
 
 export function Home() {
-  // Data for timeline
-  const timelineData = [
-    {
-      icon: "src/assets/cofo_logo.png",
-      title: "IT Student Leader",
-      timeline: "May 2025 - Present",
-      location:
-        "College of the Ozarks, Information Technology Deparqtment; Point Lookout, MS - (On Site)",
-      summary:
-        "Leading a dynamic team while instructing and training follow coworkers. While developing and implementing improvements to increase company performance and reduce costs.",
-      skills: [
-        "Human Management",
-        "Scheduling",
-        "Team Communication",
-        "Microsoft Teams",
-      ],
-      href: "https://www.cofo.edu/Workstation",
-    },
-    {
-      icon: "src/assets/cofo_logo.png",
-      title: "IT Technician",
-      timeline: "August 2023 - May 2025",
-      location:
-        "College of the Ozarks, Information Technology Deparqtment; Point Lookout, MS - (On Site)",
-      summary:
-        "Working with a dynamic team in an active environment, correcting system faults to maintain uptime of the school's network infrastructure. At the same time, producing and deployments improvements to increase company performance and reduce costs.",
-      skills: [
-        "Windows 11",
-        "MacOS 10.14+",
-        "Microsoft Configuration Manager (MCM)",
-        "PDQ",
-        "Hyper-V",
-        "LogMeIn Suite",
-      ],
-      href: "https://www.cofo.edu/Workstation",
-    },
-    {
-      icon: "src/assets/cofo_logo.png",
-      title: "Cook Assistant and Associate,",
-      timeline: "August 2022 - July 2023",
-      location:
-        "College of the Ozarks, Pearl Rogers Dining Center; Point Lookout, MS - (On Site)",
-      summary:
-        "Worked a multipurpose role on a dynamic schedule to assist with various needs, including cook assistant and dishwasher duties. While, creating a favorable environment for customers.",
-      skills: [
-        "Teamwork",
-        "Communication",
-        "Customer Service",
-        "Time Management",
-      ],
-      href: "https://www.cofo.edu/Workstation",
-    },
-    {
-      icon: "src/assets/walmart_icon.svg",
-      title: "CAP2 Stocking Associate,",
-      timeline: "September 2020 - December 2023",
-      location: "Walmart Inc; Paola, KS - (On Site)",
-      summary:
-        "Worked with a team to manage inventory in a time-sensitive environment. Managing inventory to ensure product availability to customers.",
-      skills: [
-        "Time Managment",
-        "Inventory Management",
-        "Customer Service",
-        "Manual Labor",
-      ],
-      href: "https://careers.walmart.com/",
-    },
-  ];
-
   return (
     <>
       {/* Welcome */}
@@ -167,7 +98,75 @@ export function Home() {
       {/* Work Expirence */}
       <section>
         <h4>Work Expirence</h4>
-        <Timeline data={timelineData} />
+        <Timeline
+          data={[
+            {
+              icon: "src/assets/cofo_logo.png",
+              title: "IT Student Leader",
+              timeline: "May 2025 - Present",
+              location:
+                "College of the Ozarks, Information Technology Deparqtment; Point Lookout, MS - (On Site)",
+              summary:
+                "Leading a dynamic team while instructing and training follow coworkers. While developing and implementing improvements to increase company performance and reduce costs.",
+              skills: [
+                "Human Management",
+                "Scheduling",
+                "Team Communication",
+                "Microsoft Teams",
+              ],
+              href: "https://www.cofo.edu/Workstation",
+            },
+            {
+              icon: "src/assets/cofo_logo.png",
+              title: "IT Technician",
+              timeline: "August 2023 - May 2025",
+              location:
+                "College of the Ozarks, Information Technology Deparqtment; Point Lookout, MS - (On Site)",
+              summary:
+                "Working with a dynamic team in an active environment, correcting system faults to maintain uptime of the school's network infrastructure. At the same time, producing and deployments improvements to increase company performance and reduce costs.",
+              skills: [
+                "Windows 11",
+                "MacOS 10.14+",
+                "Microsoft Configuration Manager (MCM)",
+                "PDQ",
+                "Hyper-V",
+                "LogMeIn Suite",
+              ],
+              href: "https://www.cofo.edu/Workstation",
+            },
+            {
+              icon: "src/assets/cofo_logo.png",
+              title: "Cook Assistant and Associate,",
+              timeline: "August 2022 - July 2023",
+              location:
+                "College of the Ozarks, Pearl Rogers Dining Center; Point Lookout, MS - (On Site)",
+              summary:
+                "Worked a multipurpose role on a dynamic schedule to assist with various needs, including cook assistant and dishwasher duties. While, creating a favorable environment for customers.",
+              skills: [
+                "Teamwork",
+                "Communication",
+                "Customer Service",
+                "Time Management",
+              ],
+              href: "https://www.cofo.edu/Workstation",
+            },
+            {
+              icon: "src/assets/walmart_icon.svg",
+              title: "CAP2 Stocking Associate,",
+              timeline: "September 2020 - December 2023",
+              location: "Walmart Inc; Paola, KS - (On Site)",
+              summary:
+                "Worked with a team to manage inventory in a time-sensitive environment. Managing inventory to ensure product availability to customers.",
+              skills: [
+                "Time Managment",
+                "Inventory Management",
+                "Customer Service",
+                "Manual Labor",
+              ],
+              href: "https://careers.walmart.com/",
+            },
+          ]}
+        />
       </section>
       {/* Skills */}
       <section>
@@ -209,7 +208,7 @@ export function Home() {
           <Skills
             title="DevOps"
             skills={[
-              ["Powershell", "/home-lab"],
+              ["Powershell", "https://www.cofo.edu/Workstation"],
               ["Bash", "/home-lab"],
               ["Kubernetes", "/home-lab"],
               ["Docker", "/home-lab"],
@@ -221,12 +220,12 @@ export function Home() {
           <Skills
             title="Open-Source LLMs"
             skills={[
-              ["Ollama (Docker)", , "/home-lab"],
-              ["Ollama (python SDK)", , "/grasshopper"],
-              ["Deepseek family", , "/home-lab"],
-              ["Gwen family", , "/home-lab"],
-              ["Gemma family", , "/home-lab"],
-              ["Mistral family", , "/home-lab"],
+              ["Ollama (Docker)", "/home-lab"],
+              ["Ollama (python SDK)", "/grasshopper"],
+              ["Deepseek family", "/home-lab"],
+              ["Gwen family", "/home-lab"],
+              ["Gemma family", "/home-lab"],
+              ["Mistral family", "/home-lab"],
             ]}
           />
           <Skills
@@ -234,7 +233,10 @@ export function Home() {
             skills={[
               ["Windows", "https://www.cofo.edu/Workstation"],
               ["MacOS", "https://www.cofo.edu/Workstation"],
-              ["Microsoft Configuration Manager (MCM)", "https://www.cofo.edu/Workstation"],
+              [
+                "Microsoft Configuration Manager (MCM)",
+                "https://www.cofo.edu/Workstation",
+              ],
               ["PDQ", "https://www.cofo.edu/Workstation"],
               ["Hyper-V", "https://www.cofo.edu/Workstation"],
               ["LogMeIn Suite", "https://www.cofo.edu/Workstation"],
@@ -281,7 +283,7 @@ export function Home() {
             CompTIA, Network+, and Security+. With skills in Docker, Kubernetes,
             Linux, Windows, and more. Enthusiastic and passionate professional
             passionate about building cyber solutions to build the next LAN,
-            MAN, and WAN.{" "}
+            MAN, and WAN.
           </p>
           <p>
             Proven ability in collaboration with technical and operational
