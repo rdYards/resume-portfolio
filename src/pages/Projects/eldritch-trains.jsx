@@ -11,6 +11,7 @@ export function EldritchTrains() {
         summary={
           "Eldritch Trains is a 2D top-down game built using Rust and the Macroquad framework. The game was started as a way to get started with the rust programming language."
         }
+        skills={["Rust", "Macroquad", "Parry2D"]}
       />
     </section>
   );

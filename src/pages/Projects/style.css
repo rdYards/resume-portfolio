@@ -2,7 +2,14 @@
 
 .page p {
     color: var(--text-color-light-primary);
-    margin: 0 6rem;
+    margin: 0 4rem;
+}
+.page ul {
+    margin: 0 3rem;
+}
+.page ul,
+.page li {
+    color: var(--text-color-light-primary);
 }
 
 .page-section {
@@ -11,13 +18,30 @@
     display: flex;
     align-items: center;
 }
+.page-section a {
+    width: 100%;
+}
+.page-section img {
+    width: 100%;
+}
+
+.column {
+    flex-direction: column;
+}
+.column p {
+    align-self: left;
+    margin-top: 0.75rem;
+}
 
 /* Left alignment */
 .left {
     justify-content: flex-start;
 }
 .left img {
-    margin-right: 1rem;
+    margin-right: auto;
+}
+.left p {
+    margin-left: 2rem;
 }
 
 /* Right alignment */
@@ -25,5 +49,8 @@
     justify-content: flex-end;
 }
 .right img {
-    margin-left: 1rem;
+    margin-left: auto;
+}
+.right p {
+    margin-right: 2rem;
 }
