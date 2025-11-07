@@ -21,10 +21,10 @@ export function App() {
           <Route path="/" component={Home} />
           <Route path="/credentials" component={Credentials} />
           <Route path="/project" component={Project} />
-          <Route path="/eldritch-trains" component={EldritchTrains} />
-          <Route path="/grasshopper" component={Grasshopper} />
-          <Route path="/home-lab" component={HomeLab} />
-          <Route path="/resume-website" component={ResumeWebsite} />
+          <Route path="/project/eldritch-trains" component={EldritchTrains} />
+          <Route path="/project/grasshopper" component={Grasshopper} />
+          <Route path="/project/home-lab" component={HomeLab} />
+          <Route path="/project/resume-website" component={ResumeWebsite} />
           <Route default component={NotFound} />
         </Router>
       </main>
