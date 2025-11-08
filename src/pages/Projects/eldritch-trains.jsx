@@ -53,7 +53,7 @@ export function EldritchTrains() {
           </li>
         </ul>
       </div>
-      <h2>Technologies Used</h2>
+      <h2>File Breakdown</h2>
       <div className="page-section column">
         <ul>
           <li>
