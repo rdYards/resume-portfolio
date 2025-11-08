@@ -23,6 +23,7 @@
 }
 .page-section img {
     width: 100%;
+    height: auto;
 }
 
 .column {
@@ -39,7 +40,7 @@
 }
 .left img {
     margin-right: auto;
-    max-height: 12rem;
+    max-width: 12rem;
 }
 .left p {
     margin-left: 2rem;
@@ -54,4 +55,24 @@
 }
 .right p {
     margin-right: 2rem;
+}
+
+.img-bar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+}
+.img-bar a {
+    flex: 1;
+    max-width: calc(25% - 1rem);
+    text-align: center;
+}
+.img-bar img {
+    max-width: 10rem;
+    height: auto;
+    display: block;
+    margin: 0 auto;
 }
