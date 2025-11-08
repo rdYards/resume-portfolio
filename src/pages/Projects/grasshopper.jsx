@@ -22,7 +22,7 @@ export function Grasshopper() {
           "Text to Speech",
           "Faster Whisper",
           "Virtual Enviroments",
-          "JACK"
+          "JACK",
         ]}
       />
       <h2>Overview</h2>
@@ -36,10 +36,12 @@ export function Grasshopper() {
           text-to-speech technologies to achieve this, all while being entirely
           self-contained and running locally on a Linux system.
         </p>
-        <img
-          src="/src/pages/Projects/project-assets/ollama.svg"
-          alt="Ollama Logo"
-        />
+        <a href="https://ollama.com/" target="_blank" rel="noopener noreferrer">
+          <img
+            src="/src/pages/Projects/project-assets/ollama.svg"
+            alt="Ollama Logo"
+          />
+        </a>
       </div>
       <h2>Technologies Used</h2>
       <div className="page-section column">

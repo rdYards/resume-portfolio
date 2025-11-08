@@ -114,7 +114,7 @@ export function Home() {
                 "Team Communication",
                 "Microsoft Teams",
               ],
-              href: "https://www.cofo.edu/Workstation",
+              href: "https://www.cofo.edu/Workstation#InformationTechnology-Helpdesk",
             },
             {
               icon: "src/assets/cofo_logo.png",
@@ -132,7 +132,7 @@ export function Home() {
                 "Hyper-V",
                 "LogMeIn Suite",
               ],
-              href: "https://www.cofo.edu/Workstation",
+              href: "https://www.cofo.edu/Workstation#InformationTechnology-Helpdesk",
             },
             {
               icon: "src/assets/cofo_logo.png",
@@ -148,7 +148,7 @@ export function Home() {
                 "Customer Service",
                 "Time Management",
               ],
-              href: "https://www.cofo.edu/Workstation",
+              href: "https://www.cofo.edu/Workstation#PearlRogers(Cafeteria)",
             },
             {
               icon: "src/assets/walmart_icon.svg",

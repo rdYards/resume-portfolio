@@ -38,6 +38,7 @@ export function Banner(props) {
       {prog_banner}
       <a
         href={props.href}
+        target="_blank" rel="noopener noreferrer"
         class={`${styles.resource} ${styles[`${props.mode}-mode`]}`}
       >
         <div class={styles.content}>

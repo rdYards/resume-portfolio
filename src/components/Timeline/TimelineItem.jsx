@@ -2,14 +2,14 @@ import styles from "./Timeline.module.css";
 
 export function TimelineItem(props) {
   return (
-    <a href={props.href} class={styles.timeline_item}>
+    <a
+      href={props.href}
+      class={styles.timeline_item}
+      target="_blank"
+      rel="noopener noreferrer"
+    >
       {/* Company Icon */}
-      {props.icon && (
-        <img
-          class={styles.icon}
-          src={props.icon}
-        />
-      )}
+      {props.icon && <img class={styles.icon} src={props.icon} />}
 
       {/* Content section */}
       <div class={styles.content}>
@@ -18,9 +18,12 @@ export function TimelineItem(props) {
         <p class={styles.subtitle}>{props.timeline}</p>
         <p>{props.summary}</p>
         <div class={styles.skills}>
-          {props.skills && props.skills.map((skill, index) => (
-            <span key={index} class={styles.skill}>{skill}</span>
-          ))}
+          {props.skills &&
+            props.skills.map((skill, index) => (
+              <span key={index} class={styles.skill}>
+                {skill}
+              </span>
+            ))}
         </div>
       </div>
     </a>

@@ -65,7 +65,11 @@ export function ResumeWebsite() {
       </div>
       <h2>Tech & Implementation</h2>
       <div className="page-section left">
-        <a href="https://preactjs.com/">
+        <a
+          href="https://preactjs.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <img
             src="/src/pages/Projects/project-assets/preact_logo.svg"
             alt="Preact Logo"
