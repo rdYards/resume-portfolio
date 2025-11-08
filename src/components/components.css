@@ -25,7 +25,7 @@ header a:hover {
     background-color: var(--triandary-color);
 }
 
-header object {
+header img {
     margin-left: 0.5rem;
     max-height: 35px;
     transform: rotate(30deg);

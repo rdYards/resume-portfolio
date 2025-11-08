@@ -8,11 +8,10 @@ export function CredBanner(props) {
     >
       <div class={styles.image_container}>
         {props.image && (
-          <object
+          <img
             class={styles.image}
-            type="image/svg+xml"
-            data={props.image}
-          ></object>
+            src={props.image}
+            />
         )}
       </div>
       <div class={`${styles.content} ${styles[`${props.mode}-mode`]}`}>

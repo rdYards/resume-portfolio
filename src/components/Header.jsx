@@ -6,10 +6,10 @@ export function Header() {
 
   return (
     <header>
-      <object
-        type="image/svg+xml"
-        data="src/assets/spaceshuttle_rocket_spaceship_icon.svg"
-      ></object>
+      <img
+        src="/src/assets/spaceshuttle_rocket_spaceship_icon.svg"
+        alt="Rocket Icon"
+      />
       <nav>
         <a href="/" class={url == "/" && "active"}>
           Home

@@ -5,10 +5,9 @@ export function TimelineItem(props) {
     <a href={props.href} class={styles.timeline_item}>
       {/* Company Icon */}
       {props.icon && (
-        <object
+        <img
           class={styles.icon}
-          type="image/svg+xml"
-          data={props.icon}
+          src={props.icon}
         />
       )}
 
