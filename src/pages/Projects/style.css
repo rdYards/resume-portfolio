@@ -39,6 +39,7 @@
 }
 .left img {
     margin-right: auto;
+    max-height: 12rem;
 }
 .left p {
     margin-left: 2rem;

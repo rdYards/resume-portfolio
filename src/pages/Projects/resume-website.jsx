@@ -67,7 +67,7 @@ export function ResumeWebsite() {
       <div className="page-section left">
         <a href="https://preactjs.com/">
           <img
-            src="src/pages/Projects/project-assets/preact_logo.svg"
+            src="/src/pages/Projects/project-assets/preact_logo.svg"
             alt="Preact Logo"
           />
         </a>
@@ -108,7 +108,7 @@ export function ResumeWebsite() {
           projects.
         </p>
         <img
-          src="src/pages/Projects/project-assets/GitHub_Actions.svg"
+          src="/src/pages/Projects/project-assets/GitHub_Actions.svg"
           alt="GitHub Actions Logo"
         />
       </div>
@@ -154,7 +154,7 @@ export function ResumeWebsite() {
           Below are the components and pages. Below are some key components and
           the main pages of the website.
         </p>
-        <h3>Compentents</h3>
+        <h3>Components</h3>
         <ul>
           <li>
             Header Component: The navigation bar directs users to various
