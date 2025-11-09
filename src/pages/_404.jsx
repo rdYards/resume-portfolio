@@ -20,6 +20,15 @@ export function NotFound() {
       >
         maddieharris.org
       </a>
+      <a
+        href="https://github.com/rafgraph/spa-github-pages"
+        class="button-secondary"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        rafgraph/spa-github-pages
+      </a>
+      
     </section>
   );
 }
