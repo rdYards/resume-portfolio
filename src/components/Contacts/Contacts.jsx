@@ -30,7 +30,7 @@ export function Contacts() {
       </a>
       <a
         class={styles.resume}
-        href="/aeastman_Resume.pdf"
+        href="/resume/aeastman_Resume.pdf"
         target="_blank"
         rel="noopener noreferrer"
       >

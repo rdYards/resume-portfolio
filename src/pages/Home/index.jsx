@@ -61,7 +61,7 @@ export function Home() {
             image={securityPlusIcon}
           />
         </div>
-        <a href="/credentials" class="button-primary">
+        <a href="/resume/credentials" class="button-primary">
           See More
         </a>
       </section>
@@ -75,31 +75,31 @@ export function Home() {
             mode="light"
             title="Resume Website"
             description="Website to host further details featured on my resume, and an opportunity to highlight projects previously done or actively done."
-            href="/project/resume-website"
+            href="/resume/project/resume-website"
           />
           <Banner
             prog="complete"
             mode="light"
             title="Grasshopper"
             description="Grasshopper is a voice-activated assistant application built to be an assistant in personal RPG campaigns."
-            href="/project/grasshopper"
+            href="/resume/project/grasshopper"
           />
           <Banner
             prog="in-progress"
             mode="light"
             title="Home Lab"
             description="Personal lab to learn networking and DevOps. An attempt to built my own internet."
-            href="/project/home-lab"
+            href="/resume/project/home-lab"
           />
           <Banner
             prog="paused"
             mode="light"
             title="Eldritch Trains"
             description="Eldritch Trains is a 2D top-down game built using Rust and the Macroquad framework. The game was started as a way to get started with the rust programming language."
-            href="/project/eldritch-trains"
+            href="/resume/project/eldritch-trains"
           />
         </div>
-        <a href="/project" class="button-primary">
+        <a href="/resume/project" class="button-primary">
           See More
         </a>
       </section>
@@ -183,91 +183,91 @@ export function Home() {
           <Skills
             title="Linux Systems"
             skills={[
-              ["Debian", "/home-lab"],
-              ["Ubuntu", "/home-lab"],
-              ["Pop-OS", "/home-lab"],
-              ["Arch", "/home-lab"],
-              ["EndeavourOS", "/home-lab"],
-              ["Fedora", "/home-lab"],
-              ["Rocky Linux", "/home-lab"],
+              ["Debian", "/resume/project/home-lab"],
+              ["Ubuntu", "/resume/project/home-lab"],
+              ["Pop-OS", "/resume/project/home-lab"],
+              ["Arch", "/resume/project/home-lab"],
+              ["EndeavourOS", "/resume/project/home-lab"],
+              ["Fedora", "/resume/project/home-lab"],
+              ["Rocky Linux", "/resume/project/home-lab"],
             ]}
           />
           <Skills
             title="Networking"
             skills={[
-              ["OSI model layers", "/credentials#comptia_network+"],
+              ["OSI model layers", "/resume/credentials#comptia_network+"],
               ["Networking appliances", "/credentials#comptia_network+"],
-              ["Cloud concepts", "/credentials#comptia_network+"],
-              ["Ports and protocols", "/credentials#comptia_network+"],
-              ["Transmission media", "/credentials#comptia_network+"],
-              ["Network topologies", "/credentials#comptia_network+"],
+              ["Cloud concepts", "/resume/credentials#comptia_network+"],
+              ["Ports and protocols", "/resume/credentials#comptia_network+"],
+              ["Transmission media", "/resume/credentials#comptia_network+"],
+              ["Network topologies", "/resume/credentials#comptia_network+"],
             ]}
           />
           <Skills
             title="Software"
             skills={[
-              ["Rust", "/eldritch-trains"],
-              ["Python", "/grasshopper"],
-              ["Go", "/home-lab"],
-              ["Java", "/credentials#bachelor_of_science_in_computer_science"],
+              ["Rust", "/resume/project/eldritch-trains"],
+              ["Python", "/resume/project/grasshopper"],
+              ["Go", "/resume/project/home-lab"],
+              ["Java", "/resume/credentials#bachelor_of_science_in_computer_science"],
               ["Javascript (Preact)", "/resume-website"],
             ]}
           />
           <Skills
             title="DevOps"
             skills={[
-              ["Powershell", "https://www.cofo.edu/Workstation"],
-              ["Bash", "/home-lab"],
-              ["Kubernetes", "/home-lab"],
-              ["Docker", "/home-lab"],
-              ["Git", "/home-lab"],
-              ["Gitea/GitLab/GitHub (CI-CD)", "/resume-website"],
-              ["Proxmox", "/home-lab"],
+              ["Powershell", "https://www.cofo.edu/Workstation#InformationTechnology-Helpdesk"],
+              ["Bash", "/resume/project/home-lab"],
+              ["Kubernetes", "/resume/project/home-lab"],
+              ["Docker", "/resume/project/home-lab"],
+              ["Git", "/resume/project/home-lab"],
+              ["Gitea/GitLab/GitHub (CI-CD)", "/resume/project/resume-website"],
+              ["Proxmox", "/resume/project/home-lab"],
             ]}
           />
           <Skills
             title="Open-Source LLMs"
             skills={[
-              ["Ollama (Docker)", "/home-lab"],
-              ["Ollama (python SDK)", "/grasshopper"],
-              ["Deepseek family", "/home-lab"],
-              ["Gwen family", "/home-lab"],
-              ["Gemma family", "/home-lab"],
-              ["Mistral family", "/home-lab"],
+              ["Ollama (Docker)", "/resume/project/home-lab"],
+              ["Ollama (python SDK)", "/resume/project/grasshopper"],
+              ["Deepseek family", "/resume/project/home-lab"],
+              ["Gwen family", "/resume/project/home-lab"],
+              ["Gemma family", "/resume/project/home-lab"],
+              ["Mistral family", "/resume/project/home-lab"],
             ]}
           />
           <Skills
             title="IT"
             skills={[
-              ["Windows", "https://www.cofo.edu/Workstation"],
-              ["MacOS", "https://www.cofo.edu/Workstation"],
+              ["Windows", "https://www.cofo.edu/Workstation#InformationTechnology-Helpdesk"],
+              ["MacOS", "https://www.cofo.edu/Workstation#InformationTechnology-Helpdesk"],
               [
                 "Microsoft Configuration Manager (MCM)",
-                "https://www.cofo.edu/Workstation",
+                "https://www.cofo.edu/Workstation#InformationTechnology-Helpdesk",
               ],
-              ["PDQ", "https://www.cofo.edu/Workstation"],
-              ["Hyper-V", "https://www.cofo.edu/Workstation"],
-              ["LogMeIn Suite", "https://www.cofo.edu/Workstation"],
+              ["PDQ", "https://www.cofo.edu/Workstation#InformationTechnology-Helpdesk"],
+              ["Hyper-V", "https://www.cofo.edu/Workstation#InformationTechnology-Helpdesk"],
+              ["LogMeIn Suite", "https://www.cofo.edu/Workstation#InformationTechnology-Helpdesk"],
             ]}
           />
           <Skills
             title="Homelab"
             skills={[
-              ["Proxmox", "/home-lab"],
-              ["Gitea", "/home-lab"],
-              ["Cisco UCS C210 M2", "/home-lab"],
-              ["Cisco Catalyst 2960-X", "/home-lab"],
-              ["Netgear Nighthawk R8000P", "/home-lab"],
-              ["NAS samba", "/home-lab"],
+              ["Proxmox", "/resume/project/home-lab"],
+              ["Gitea", "/resume/project/home-lab"],
+              ["Cisco UCS C210 M2", "/resume/project/home-lab"],
+              ["Cisco Catalyst 2960-X", "/resume/project/home-lab"],
+              ["Netgear Nighthawk R8000P", "/resume/project/home-lab"],
+              ["NAS samba", "/resume/project/home-lab"],
             ]}
           />
           <Skills
             title="Leadership"
             skills={[
-              ["Human management", "https://www.cofo.edu/Workstation"],
-              ["Scheduling", "https://www.cofo.edu/Workstation"],
-              ["Team Communication", "https://www.cofo.edu/Workstation"],
-              ["Microsoft Teams", "https://www.cofo.edu/Workstation"],
+              ["Human management", "https://www.cofo.edu/Workstation#InformationTechnology-Helpdesk"],
+              ["Scheduling", "https://www.cofo.edu/Workstation#InformationTechnology-Helpdesk"],
+              ["Team Communication", "https://www.cofo.edu/Workstation#InformationTechnology-Helpdesk"],
+              ["Microsoft Teams", "https://www.cofo.edu/Workstation#InformationTechnology-Helpdesk"],
             ]}
           />
         </div>

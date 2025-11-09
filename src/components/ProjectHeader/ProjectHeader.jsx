@@ -6,7 +6,7 @@ export function ProjectHeader(props) {
   const simplifiedLink = props.link.replace(/^https?:\/\//, "");
   return (
     <>
-      <a href="/project" class={`button-secondary ${styles.back_button}`}>
+      <a href="/resume/project" class={`button-secondary ${styles.back_button}`}>
         Back to Projects
       </a>
       <div class={styles.another_wrapper}>
