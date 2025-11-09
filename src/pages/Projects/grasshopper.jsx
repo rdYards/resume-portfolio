@@ -38,7 +38,7 @@ export function Grasshopper() {
         </p>
         <a href="https://ollama.com/" target="_blank" rel="noopener noreferrer">
           <img
-            src="/src/pages/Projects/project-assets/ollama.svg"
+            src="/src/assets/project-assets/ollama.svg"
             alt="Ollama Logo"
           />
         </a>

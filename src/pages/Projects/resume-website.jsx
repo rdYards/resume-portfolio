@@ -71,7 +71,7 @@ export function ResumeWebsite() {
           rel="noopener noreferrer"
         >
           <img
-            src="/src/pages/Projects/project-assets/preact_logo.svg"
+            src="/src/assets/project-assets/preact_logo.svg"
             alt="Preact Logo"
           />
         </a>
@@ -112,7 +112,7 @@ export function ResumeWebsite() {
           projects.
         </p>
         <img
-          src="/src/pages/Projects/project-assets/GitHub_Actions.svg"
+          src="/src/assets/project-assets/GitHub_Actions.svg"
           alt="GitHub Actions Logo"
         />
       </div>

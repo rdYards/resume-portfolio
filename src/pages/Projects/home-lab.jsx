@@ -46,7 +46,7 @@ export function HomeLab() {
           server and HP Z240 workstations.
         </p>
         <img
-          src="/src/pages/Projects/project-assets/Proxmox_Dashboard.png"
+          src="/src/assets/project-assets/Proxmox_Dashboard.png"
           alt="Proxmox DashBoard"
         />
       </div>
@@ -76,7 +76,7 @@ export function HomeLab() {
           rel="noopener noreferrer"
         >
           <img
-            src="/src/pages/Projects/project-assets/logo_HP_Electric_Blue_keyline.png"
+            src="/src/assets/project-assets/logo_HP_Electric_Blue_keyline.png"
             alt="HP Logo"
           />
         </a>
@@ -86,7 +86,7 @@ export function HomeLab() {
           rel="noopener noreferrer"
         >
           <img
-            src="/src/pages/Projects/project-assets/NTGR.D.svg"
+            src="/src/assets/project-assets/NTGR.D.svg"
             alt="Netgear Logo"
           />
         </a>
@@ -135,13 +135,13 @@ export function HomeLab() {
           rel="noopener noreferrer"
         >
           <img
-            src="/src/pages/Projects/project-assets/kube_logo.svg"
+            src="/src/assets/project-assets/kube_logo.svg"
             alt="Kubernetes Logo"
           />
         </a>
         <a href="https://k3s.io/" target="_blank" rel="noopener noreferrer">
           <img
-            src="/src/pages/Projects/project-assets/k3s-original.svg"
+            src="/src/assets/project-assets/k3s-original.svg"
             alt="K3s Logo"
           />
         </a>
@@ -151,7 +151,7 @@ export function HomeLab() {
           rel="noopener noreferrer"
         >
           <img
-            src="/src/pages/Projects/project-assets/proxmox-logo-stacked-color.svg"
+            src="/src/assets/project-assets/proxmox-logo-stacked-color.svg"
             alt="Proxmox Logo"
           />
         </a>
@@ -161,7 +161,7 @@ export function HomeLab() {
           rel="noopener noreferrer"
         >
           <img
-            src="/src/pages/Projects/project-assets/gitea_logo.svg"
+            src="/src/assets/project-assets/gitea_logo.svg"
             alt="Gitea Logo"
           />
         </a>
@@ -171,7 +171,7 @@ export function HomeLab() {
           rel="noopener noreferrer"
         >
           <img
-            src="/src/pages/Projects/project-assets/linux-icon.svg"
+            src="/src/assets/project-assets/linux-icon.svg"
             alt="Linux Logo"
           />
         </a>
@@ -191,7 +191,7 @@ export function HomeLab() {
           rel="noopener noreferrer"
         >
           <img
-            src="/src/pages/Projects/project-assets/PiHole.svg"
+            src="/src/assets/project-assets/PiHole.svg"
             alt="PiHole Logo"
           />
         </a>
@@ -201,7 +201,7 @@ export function HomeLab() {
           rel="noopener noreferrer"
         >
           <img
-            src="/src/pages/Projects/project-assets/samba_logo.svg"
+            src="/src/assets/project-assets/samba_logo.svg"
             alt="Samab Logo"
           />
         </a>
