@@ -36,6 +36,7 @@ jobs:
           VALIDATE_ALL_CODEBASE: false
           DEFAULT_BRANCH: "main"
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          FIX_GITHUB_ACTIONS_ZIZMOR: true
           FIX_CSS_PRETTIER: true
           FIX_CSS: true
           FIX_HTML_PRETTIER: true
@@ -43,7 +44,11 @@ jobs:
           FIX_JSX: true
           FIX_MARKDOWN_PRETTIER: true
           FIX_MARKDOWN: true
-          
+          FIX_YAML_PRETTIER: true
+          FIX_BIOME_FORMAT: true
+          FIX_BIOME_LINT: true
+          FIX_NATURAL_LANGUAGE: true
+
       - name: Commit and push linting fixes
         # Run only on:
         # - Pull requests
@@ -57,4 +62,3 @@ jobs:
           commit_message: "chore: fix linting issues"
           commit_user_name: super-linter
           commit_user_email: super-linter@super-linter.dev
-          
