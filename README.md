@@ -1,3 +1,5 @@
+[![Super-Linter](https://github.com/<OWNER>/<REPOSITORY>/actions/workflows/<WORKFLOW_FILE_NAME>/badge.svg)](https://github.com/marketplace/actions/super-linter)
+
 Welcome to my portfolio website. This site is designed to showcase my professional skills, credentials, and projects beyond what traditional platforms like LinkedIn offer.
 
 ## Table of Contents

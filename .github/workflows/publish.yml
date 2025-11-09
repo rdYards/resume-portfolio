@@ -4,7 +4,7 @@ on:
     branches:
       - main
   workflow_run:
-      workflows: ["Lint Code Base"]   # Name of the first workflow
+      workflows: ["Lint"]   # Name of the first workflow
       types:
         - completed 
 jobs:
