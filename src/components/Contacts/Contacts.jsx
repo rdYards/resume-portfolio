@@ -1,8 +1,8 @@
 import styles from "./Contacts.module.css";
 
-import githubLogo from "src/assets/github-logo.svg";
-import mailSendLine from "src/assets/mail-send-line.svg";
-import inIcon from "src/assets/in_icon.svg";
+import githubLogo from "../../assets/github-logo.svg";
+import mailSendLine from "../../assets/mail-send-line.svg";
+import inIcon from "../../assets/in_icon.svg";
 
 export function Contacts() {
   return (
