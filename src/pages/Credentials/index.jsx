@@ -2,9 +2,9 @@ import "./style.css";
 import { CredBanner } from "../../components/CredBanner/CredBanner";
 
 // Import images
-import cofoLogo from "src/assets/cofo_logo.png";
-import networkPlusIcon from "src/assets/Network+-svg.svg";
-import securityPlusIcon from "src/assets/Security+-svg.svg";
+import cofoLogo from "../../assets/cofo_logo.png";
+import networkPlusIcon from "../../assets/Network+-svg.svg";
+import securityPlusIcon from "../../assets/Security+-svg.svg";
 
 export function Credentials() {
   return (

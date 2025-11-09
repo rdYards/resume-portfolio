@@ -6,12 +6,12 @@ import { CredBanner } from "../../components/CredBanner/CredBanner";
 import { Timeline } from "../../components/Timeline/Timeline";
 
 // Import image assets
-import codeImg from "src/assets/code.png";
-import cofoLogo from "src/assets/cofo_logo.png";
-import networkPlusIcon from "src/assets/Network+-svg.svg";
-import securityPlusIcon from "src/assets/Security+-svg.svg";
-import suitAndTieImg from "src/assets/suit_and_tie.jpg";
-import walmartIcon from "src/assets/walmart_icon.svg";
+import codeImg from "../../assets/code.png";
+import cofoLogo from "../../assets/cofo_logo.png";
+import networkPlusIcon from "../../assets/Network+-svg.svg";
+import securityPlusIcon from "../../assets/Security+-svg.svg";
+import suitAndTieImg from "../../assets/suit_and_tie.jpg";
+import walmartIcon from "../../assets/walmart_icon.svg";
 
 export function Home() {
   return (

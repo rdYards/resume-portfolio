@@ -2,16 +2,16 @@ import "./style.css";
 import { ProjectHeader } from "../../components/ProjectHeader/ProjectHeader";
 
 // Import images
-import ProxmoxDashboardImg from "/src/assets/project-assets/Proxmox_Dashboard.png";
-import HpLogo from "/src/assets/project-assets/logo_HP_Electric_Blue_keyline.png";
-import NetgearLogo from "/src/assets/project-assets/NTGR.D.svg";
-import KubernetesLogo from "/src/assets/project-assets/kube_logo.svg";
-import K3sLogo from "/src/assets/project-assets/k3s-original.svg";
-import ProxmoxLogo from "/src/assets/project-assets/proxmox-logo-stacked-color.svg";
-import GiteaLogo from "/src/assets/project-assets/gitea_logo.svg";
-import LinuxLogo from "/src/assets/project-assets/linux-icon.svg";
-import PiHoleLogo from "/src/assets/project-assets/PiHole.svg";
-import SambaLogo from "/src/assets/project-assets/samba_logo.svg";
+import ProxmoxDashboardImg from "../../assets/project-assets/Proxmox_Dashboard.png";
+import HpLogo from "../../assets/project-assets/logo_HP_Electric_Blue_keyline.png";
+import NetgearLogo from "../../assets/project-assets/NTGR.D.svg";
+import KubernetesLogo from "../../assets/project-assets/kube_logo.svg";
+import K3sLogo from "../../assets/project-assets/k3s-original.svg";
+import ProxmoxLogo from "../../assets/project-assets/proxmox-logo-stacked-color.svg";
+import GiteaLogo from "../../assets/project-assets/gitea_logo.svg";
+import LinuxLogo from "../../assets/project-assets/linux-icon.svg";
+import PiHoleLogo from "../../assets/project-assets/PiHole.svg";
+import SambaLogo from "../../assets/project-assets/samba_logo.svg";
 
 export function HomeLab() {
   return (
