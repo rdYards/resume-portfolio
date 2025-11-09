@@ -5,7 +5,7 @@ import { Header } from "./components/Header.jsx";
 import { Home } from "./pages/Home/index.jsx";
 import { Credentials } from "./pages/Credentials/index.jsx";
 import { Project } from "./pages/Project/index.jsx";
-import { ResumeWebsite } from "./pages/Projects/resume-website.jsx"
+import { ResumeWebsite } from "./pages/Projects/resume-website.jsx";
 import { Grasshopper } from "./pages/Projects/grasshopper.jsx";
 import { EldritchTrains } from "./pages/Projects/eldritch-trains.jsx";
 import { HomeLab } from "./pages/Projects/home-lab.jsx";

@@ -1,6 +1,10 @@
 import "./style.css";
 import { ProjectHeader } from "../../components/ProjectHeader/ProjectHeader";
 
+// Import images
+import preactLogo from "/src/assets/project-assets/preact_logo.svg";
+import githubActionsLogo from "/src/assets/project-assets/GitHub_Actions.svg";
+
 export function ResumeWebsite() {
   return (
     <section class="page">
@@ -70,10 +74,7 @@ export function ResumeWebsite() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <img
-            src="/src/assets/project-assets/preact_logo.svg"
-            alt="Preact Logo"
-          />
+          <img src={preactLogo} alt="Preact Logo" />
         </a>
         <p>
           The website is built using Preact, a fast 3kB alternative to React. I
@@ -111,10 +112,7 @@ export function ResumeWebsite() {
           this project with additional features and apply these skills to future
           projects.
         </p>
-        <img
-          src="/src/assets/project-assets/GitHub_Actions.svg"
-          alt="GitHub Actions Logo"
-        />
+        <img src={githubActionsLogo} alt="GitHub Actions Logo" />
       </div>
       <div className="page-section column">
         <h2>Portfolio Website: TECH Talk</h2>

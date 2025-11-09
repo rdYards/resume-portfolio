@@ -5,6 +5,14 @@ import Skills from "../../components/Skills";
 import { CredBanner } from "../../components/CredBanner/CredBanner";
 import { Timeline } from "../../components/Timeline/Timeline";
 
+// Import image assets
+import codeImg from "src/assets/code.png";
+import cofoLogo from "src/assets/cofo_logo.png";
+import networkPlusIcon from "src/assets/Network+-svg.svg";
+import securityPlusIcon from "src/assets/Security+-svg.svg";
+import suitAndTieImg from "src/assets/suit_and_tie.jpg";
+import walmartIcon from "src/assets/walmart_icon.svg";
+
 export function Home() {
   return (
     <>
@@ -19,7 +27,7 @@ export function Home() {
           </p>
           <p>Let me show you my Proofs.</p>
         </div>
-        <img src="src/assets/code.png" alt="Professionally done code" />
+        <img src={codeImg} alt="Professionally done code" />
       </section>
       {/* Credentials */}
       <section>
@@ -30,27 +38,27 @@ export function Home() {
             mode="light"
             title="Bachelor of Science in Computer Science"
             active_date="May 2026"
-            image="src/assets/cofo_logo.png"
+            image={cofoLogo}
           />
           <CredBanner
             mode="light"
             title="Minor in Cybersecurity"
             active_date="May 2026"
-            image="src/assets/cofo_logo.png"
+            image={cofoLogo}
           />
           <CredBanner
             mode="light"
             title="CompTIA Network+"
             verify_code="V67GDSW581EEK6S2"
             active_date="June 2025"
-            image="src/assets/Network+-svg.svg"
+            image={networkPlusIcon}
           />
           <CredBanner
             mode="light"
             title="CompTIA Security+"
             verify_code="B5TR4RNY724ES5M2"
             active_date="August 2025"
-            image="src/assets/Security+-svg.svg"
+            image={securityPlusIcon}
           />
         </div>
         <a href="/credentials" class="button-primary">
@@ -101,7 +109,7 @@ export function Home() {
         <Timeline
           data={[
             {
-              icon: "src/assets/cofo_logo.png",
+              icon: cofoLogo,
               title: "IT Student Leader",
               timeline: "May 2025 - Present",
               location:
@@ -117,7 +125,7 @@ export function Home() {
               href: "https://www.cofo.edu/Workstation#InformationTechnology-Helpdesk",
             },
             {
-              icon: "src/assets/cofo_logo.png",
+              icon: cofoLogo,
               title: "IT Technician",
               timeline: "August 2023 - May 2025",
               location:
@@ -135,7 +143,7 @@ export function Home() {
               href: "https://www.cofo.edu/Workstation#InformationTechnology-Helpdesk",
             },
             {
-              icon: "src/assets/cofo_logo.png",
+              icon: cofoLogo,
               title: "Cook Assistant and Associate,",
               timeline: "August 2022 - July 2023",
               location:
@@ -151,7 +159,7 @@ export function Home() {
               href: "https://www.cofo.edu/Workstation#PearlRogers(Cafeteria)",
             },
             {
-              icon: "src/assets/walmart_icon.svg",
+              icon: walmartIcon,
               title: "CAP2 Stocking Associate,",
               timeline: "September 2020 - December 2023",
               location: "Walmart Inc; Paola, KS - (On Site)",
@@ -267,10 +275,7 @@ export function Home() {
       {/* About me */}
       <section class="container">
         <div>
-          <img
-            src="src/assets/suit_and_tie.jpg"
-            alt="A suite a professional would wear"
-          />
+          <img src={suitAndTieImg} alt="A suite a professional would wear" />
         </div>
         <div class="contact_content">
           <h2>About Alexander</h2>

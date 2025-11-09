@@ -1,6 +1,18 @@
 import "./style.css";
 import { ProjectHeader } from "../../components/ProjectHeader/ProjectHeader";
 
+// Import images
+import ProxmoxDashboardImg from "/src/assets/project-assets/Proxmox_Dashboard.png";
+import HpLogo from "/src/assets/project-assets/logo_HP_Electric_Blue_keyline.png";
+import NetgearLogo from "/src/assets/project-assets/NTGR.D.svg";
+import KubernetesLogo from "/src/assets/project-assets/kube_logo.svg";
+import K3sLogo from "/src/assets/project-assets/k3s-original.svg";
+import ProxmoxLogo from "/src/assets/project-assets/proxmox-logo-stacked-color.svg";
+import GiteaLogo from "/src/assets/project-assets/gitea_logo.svg";
+import LinuxLogo from "/src/assets/project-assets/linux-icon.svg";
+import PiHoleLogo from "/src/assets/project-assets/PiHole.svg";
+import SambaLogo from "/src/assets/project-assets/samba_logo.svg";
+
 export function HomeLab() {
   return (
     <section class="page">
@@ -45,10 +57,7 @@ export function HomeLab() {
           leverages carefully selected hardware, including a Cisco UCS C210 M2
           server and HP Z240 workstations.
         </p>
-        <img
-          src="/src/assets/project-assets/Proxmox_Dashboard.png"
-          alt="Proxmox DashBoard"
-        />
+        <img src={ProxmoxDashboardImg} alt="Proxmox DashBoard" />
       </div>
       <h2>Hardware Used</h2>
       <div className="page-section column">
@@ -75,20 +84,14 @@ export function HomeLab() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <img
-            src="/src/assets/project-assets/logo_HP_Electric_Blue_keyline.png"
-            alt="HP Logo"
-          />
+          <img src={HpLogo} alt="HP Logo" />
         </a>
         <a
           href="https://www.netgear.com/"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <img
-            src="/src/assets/project-assets/NTGR.D.svg"
-            alt="Netgear Logo"
-          />
+          <img src={NetgearLogo} alt="Netgear Logo" />
         </a>
       </div>
       <h2>Software Used</h2>
@@ -134,46 +137,31 @@ export function HomeLab() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <img
-            src="/src/assets/project-assets/kube_logo.svg"
-            alt="Kubernetes Logo"
-          />
+          <img src={KubernetesLogo} alt="Kubernetes Logo" />
         </a>
         <a href="https://k3s.io/" target="_blank" rel="noopener noreferrer">
-          <img
-            src="/src/assets/project-assets/k3s-original.svg"
-            alt="K3s Logo"
-          />
+          <img src={K3sLogo} alt="K3s Logo" />
         </a>
         <a
           href="https://www.proxmox.com/en/"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <img
-            src="/src/assets/project-assets/proxmox-logo-stacked-color.svg"
-            alt="Proxmox Logo"
-          />
+          <img src={ProxmoxLogo} alt="Proxmox Logo" />
         </a>
         <a
           href="https://about.gitea.com/"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <img
-            src="/src/assets/project-assets/gitea_logo.svg"
-            alt="Gitea Logo"
-          />
+          <img src={GiteaLogo} alt="Gitea Logo" />
         </a>
         <a
           href="https://www.linuxfoundation.org/"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <img
-            src="/src/assets/project-assets/linux-icon.svg"
-            alt="Linux Logo"
-          />
+          <img src={LinuxLogo} alt="Linux Logo" />
         </a>
         <a
           href="https://www.debian.org/"
@@ -190,20 +178,14 @@ export function HomeLab() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <img
-            src="/src/assets/project-assets/PiHole.svg"
-            alt="PiHole Logo"
-          />
+          <img src={PiHoleLogo} alt="PiHole Logo" />
         </a>
         <a
           href="https://documentation.ubuntu.com/server/how-to/samba/file-server/"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <img
-            src="/src/assets/project-assets/samba_logo.svg"
-            alt="Samab Logo"
-          />
+          <img src={SambaLogo} alt="Samab Logo" />
         </a>
       </div>
       <div className="page-section column">

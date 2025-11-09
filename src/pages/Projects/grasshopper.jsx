@@ -1,6 +1,9 @@
 import "./style.css";
 import { ProjectHeader } from "../../components/ProjectHeader/ProjectHeader";
 
+// Import images
+import ollamaLogo from "../../assets/project-assets/ollama.svg";
+
 export function Grasshopper() {
   return (
     <section class="page">
@@ -37,10 +40,7 @@ export function Grasshopper() {
           self-contained and running locally on a Linux system.
         </p>
         <a href="https://ollama.com/" target="_blank" rel="noopener noreferrer">
-          <img
-            src="/src/assets/project-assets/ollama.svg"
-            alt="Ollama Logo"
-          />
+          <img src={ollamaLogo} alt="Ollama Logo" />
         </a>
       </div>
       <h2>Technologies Used</h2>
