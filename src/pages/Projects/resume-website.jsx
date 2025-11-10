@@ -4,6 +4,7 @@ import { ProjectHeader } from "../../components/ProjectHeader/ProjectHeader";
 // Import images
 import preactLogo from "/src/assets/project-assets/preact_logo.svg";
 import githubActionsLogo from "/src/assets/project-assets/GitHub_Actions.svg";
+import cofo_id_link from "/src/assets/project-assets/Credential_Link_Update.png";
 
 export function ResumeWebsite() {
   return (
@@ -218,6 +219,79 @@ export function ResumeWebsite() {
           paired with my personal Gitea server, which I have in my home lab
           (mentioned in my Home Lab project). With my long-term plan to pursue
           DevOps/MLOps, this is the logical step to take in that direction.
+        </p>
+      </div>
+      <h2>Update: Fixing Credential Links</h2>
+      <div className="page-section left">
+        <p>
+          While development of the timeline module, referencing past experiences
+          for College of the Ozarks revealed a single page containing all
+          workstation data. This necessitated a more granular linking mechanism.
+          I then collaborated with the web development team, adding unique ID
+          tags to each workstation entry. The timeline module was then updated
+          to utilize these IDs, enabling direct links to the corresponding
+          workstation details.
+        </p>
+        <img
+          src={cofo_id_link}
+          alt="Picture of Workstation Webpage with new id tags for each workstation"
+        />
+      </div>
+      <h2>Update: Pushing to Production</h2>
+      <div className="page-section column">
+        <p>
+          Following local website setup, deployment to GitHub Pages was
+          initiated. GitHub offers “actions” and “deploy from a branch” as
+          deployment methods to Production. The deployment method selected was
+          “deploy from a branch” due to its simplicity. A GitHub Actions
+          workflow was created to create a Ubuntu instance, compile the Vite
+          project code, and then deploy it to a separate branch, gh-pages.
+          GitHub then takes the code in gh-pages and pushes it to Production.
+        </p>
+        <p>
+          The initial push to Production revealed several issues requiring
+          resolution. Post-deployment, image and anchor links were
+          non-functional. After analysis, I found this stemmed from hardcoded
+          URLs specific to the development environment. When using a compiled
+          framework like Preact, absolute paths can be problematic. URLs must be
+          relative to facilitate correct resolution during the compilation
+          process. All hardcoded URLs were updated to use relative paths,
+          resolving the issues with broken links.
+        </p>
+        <p>
+          A discrepancy was then found between the expected base root path and
+          the actual path on GitHub Pages. GitHub Pages serves projects under a
+          subdirectory structure (/repo-name/) rather than the root directory
+          (/). This caused navigation issues; for example, clicking the home
+          link in the header component (configured for /) resulted in
+          redirection to https://rdyards.github.io/ instead of the intended
+          https://rdyards.github.io/resume/. Initial attempts to modify the base
+          root path at the system level proved unsuccessful as Preact, unlike
+          React, does not support this functionality. Consequently, all URLs
+          were updated to include the /resume/ prefix, aligning the base path
+          with the GitHub Pages configuration.
+        </p>
+        <p>
+          After resolving the above issues, refreshing individual pages resulted
+          in 404 errors. GitHub Pages expects a corresponding HTML file for each
+          URL that you specify. Preact, as a single-page application (SPA),
+          generates only one HTML file, with all routing handled client-side via
+          JavaScript. To address this, the solution utilizes a proxy pattern
+          based on the open-source project rafgraph/spa-github-pages. This
+          involved adding a small snippet of vanilla JavaScript to the
+          index.html file and including a 404.html file. This setup allows the
+          server to correctly handle all routes, serving the index.html file for
+          every request and allowing the client-side router to handle
+          navigation. After fixing the frontend, the deploy workflow was updated
+          to copy 404.html to the gh-pages branch.
+        </p>
+        <p>
+          Deployment to GitHub Pages presented several unforeseen challenges.
+          The process necessitated in-depth troubleshooting and a commitment to
+          learning new tools and techniques. However, the ability to explore
+          solutions thoroughly, unconstrained by strict time limitations, proved
+          invaluable. I plan to expand on what I learn as I continue my
+          projects.
         </p>
       </div>
     </section>
