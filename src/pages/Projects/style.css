@@ -3,9 +3,11 @@
 .page p {
     color: var(--text-color-light-primary);
     margin: 0 4rem;
+    line-height: 1.55;
 }
 .page ul {
     margin: 0 3rem;
+    line-height: 1.55;
 }
 .page ul,
 .page li {
